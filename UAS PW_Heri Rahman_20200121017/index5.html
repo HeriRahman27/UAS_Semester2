@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>PROGRAM PENJUALAN BARANG ELEKTRONIK</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>PROGRAM PENJUALAN BARANG ELEKTRONIK</h1>
+        <hr>
+    </div>
+    <div>
+        <form class="container" onsubmit="return false">
+            <div class="mb-2">
+                <label class="col-2">Nama Barang</label>
+                <label>:</label>
+                <input type="text" id="namabarang">
+            </div>
+
+            <div class="mb-2">
+                <label class="col-2">Harga</label>
+                <label>:</label>
+                <input type="text" id="harga">
+            </div>
+
+
+            <div class="mb-2">
+                <label class="col-2">Jumlah</label>
+                <label>:</label>
+                <input type="text" id="jumlah">
+            </div>
+
+            <div class="mb-2">
+                <label class="col-2">Akesoris</label>
+                <label>:</label>
+                <input class="form-check-input" type="checkbox" value="usb" id="checkusb">
+                <label class="form-check-label" for="usb">
+                  USB
+                </label>
+
+                <div class="mb-1">
+                    <label class="col-2"></label>
+                    <label>:</label>
+                    <input class="form-check-input" type="checkbox" value="memory" id="checkmemory">
+                    <label class="form-check-label" for="memory">
+                      Memory
+                    </label>
+                </div>
+
+                <div class="mb-2">
+                    <label class="col-2"></label>
+                    <label>:</label>
+                    <input class="form-check-input" type="checkbox" value="speaker" id="checkspeaker">
+                    <label class="form-check-label" for="speaker">
+                      Speaker
+                    </label>
+                </div>
+               
+            </div>
+
+
+            <div class="mb-2">
+                <label class="col-2">Total</label>
+                <label>:</label>
+                <input type="text" id="total" disabled>
+            </div>
+
+            <div class="mb-2">
+                <label class="col-2">Pajak10%</label>
+                <label>:</label>
+                <input type="text" id="pajak" disabled>
+            </div>
+
+            <div class="mb-2">
+                <label class="col-2">Bayar</label>
+                <label>:</label>
+                <input type="text" id="bayar" disabled>
+            </div>
+
+            <div class="container">
+                <button type="submit" class="btn btn-primary me-5" onclick="proses()">proses</button>
+                <button type="reset" class="btn btn-info ">reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="java5.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
